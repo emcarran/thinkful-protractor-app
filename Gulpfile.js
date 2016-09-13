@@ -47,7 +47,7 @@ function runProtractor(debug) {
     if(debug) {
       args.unshift('debug');
     }
-    gulp.src(["./e2e-tests/**/*Spec.js"])
+    gulp.src(["./e2e-tests/*Spec.js"])
         .pipe(protractor({
             configFile: "protractor.js",
             args: args
